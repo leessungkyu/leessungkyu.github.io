@@ -1,0 +1,99 @@
+body{
+  margin:0;
+}
+div, textarea{
+  border: 1px solid yellowgreen;
+ /* width: 250px;*/
+  box-sizing:border-box;      
+}
+
+.div2{
+  float:left;
+}
+
+.div3{
+  float:left;
+}
+
+.div4 ul{
+  /* 리스트 기호를 변경 */
+  list-style-type: square;
+}
+
+.div4 ol{
+  list-style-type: upper-roman;
+}
+
+.nav {
+  background-color: purple;
+}
+
+.nav li{
+  /* 기본적으로 ul은 display block처리 되어 있음 */
+  display:inline-block;
+  width:25px;
+  font-size: 8px;
+  text-align: center;
+  /*border: 1px dotted red;*/
+  background-color: aquamarine;
+  padding: 10px;
+  border-radius: 6px;
+  /*아래 속성을 적용이 안된다 a태그는 기본 속성 자체를 변경해줘야 한다.*/
+  text-decoration: none;
+  color:blue;
+}
+
+/*자체 속성으로 변경을 하고 싶으면
+  visited: a태크를 눌렀을때
+  hover:마우스 올려놓았을때
+  active:실행시켰을때
+*/
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus
+{
+   text-decoration: none;
+   color: blue;
+   font-size:10px;
+}
+
+.target{
+  width: 400px;
+  background-color: grey;
+  position: relative;
+  top:-50px;
+  right: -150px;
+}
+
+.input-class
+{
+  width: 200px;
+}
+
+.input-class input{  
+  /* 자체 패딩이 있어 크기를 맞추기 위해서는 아래 코드 추가 필요*/
+  box-sizing:border-box;
+}
+
+.input-class input[type=text],
+.input-class input[type=number]{
+  width:100%;
+  font-size: 20px;
+}
+
+.input-class input[type=text]:hover{
+  padding: 10px;
+  border-radius: 15px;
+  border:1px solid purple;
+}
+
+.my-table{
+  border-collapse: collapse;
+}
+.my-table tr td{
+  border: 1px solid green;
+  width:50px;
+}
